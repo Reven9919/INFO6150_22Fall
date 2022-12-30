@@ -1,0 +1,393 @@
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    background-color: papayawhip;
+    font-family: sans-serif;
+}
+
+header{
+    background-color:burlywood;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-title{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+main{
+    flex: 1;
+}
+
+.open{
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: blue;
+    background: none;
+    cursor: pointer;
+    font-size: 1em;
+
+}
+
+/* .nav{
+    grid-area: globalnav;
+    grid-template-columns: repeat(12,1fm);
+    
+}
+
+
+.nav__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    grid-template-columns: repeat(12,1fm);
+    
+}
+.localnav{
+    grid-area: localnav;
+} */
+.main{
+    grid-area: main;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .box1{
+        margin: 0;
+        display: block;
+    }
+    .box1_pic{
+        float: left;
+        width: 125px;
+        height: 125px;
+    }
+    .box2{
+        margin: 0;
+        display: block;
+    }
+    .box2_pic{
+        float: left;
+        width: 125px;
+        height: 125px;
+    }
+
+}
+
+.main{
+    height: 100%;
+   
+    font-size: 20px;
+}
+
+
+
+
+
+.body{
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:1rem;
+    padding: 2rem;
+}
+.card{
+    
+    grid-column:span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    border-radius: 2rem;
+
+    
+    border: 1px solid black;
+    
+    background-color: lightgray;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+.card:hover{
+    box-shadow:none ;
+}
+.card__pic{
+    aspect-ratio: 1/1;
+    width: 80%;
+}
+
+.card__link{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: lightgray;
+}
+
+
+footer{
+    background-color: burlywood;
+    margin-top: auto;
+}
+footer ul{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+footer li{
+    grid-column: span 3;
+   
+}
+.modal{
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+.modal::backdrop{
+    background-color: lightgray;
+    opacity: 0.6;
+
+}
+
+.error-message {
+    color: red;
+  
+    font-size: 1rem;
+}
+#email-error {
+    grid-area: emailerror;
+}
+  
+#confirm-email-error {
+    grid-area: confirmemailerror;
+}
+
+.forms{
+    background-color: lightblue;
+    color: black;
+    padding: 2rem; 
+    display: flex;
+    flex-flow: column;
+    margin: 0rem;
+}
+.subscribe{
+    display: flex;
+    float:left;
+
+}
+.cancel{
+    display: flex;
+    float:right;
+
+}
+
+
+
+@media only screen and (max-width: 44rem) {
+
+    .card{
+        grid-column: span 6;
+
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .box{
+        margin: 0;
+        display: block;
+    }
+
+    .box:first-of-type .box-pic{
+        float: right;
+        width: 125px;
+        height: 125px;
+    }
+
+    .box-pic{
+        float: right;
+        width: 125px;
+        height: 125px;
+    }
+
+}
