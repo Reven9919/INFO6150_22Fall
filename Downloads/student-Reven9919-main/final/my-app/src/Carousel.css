@@ -1,0 +1,28 @@
+.carousel-container {
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh ;
+}
+
+.carousel-item {
+    max-width: 48rem;
+    width: 80%;
+    object-fit: contain;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}

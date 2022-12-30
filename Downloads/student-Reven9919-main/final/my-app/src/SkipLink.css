@@ -1,0 +1,14 @@
+.skiplink{
+    position: absolute;
+    top: -100%;
+
+    padding: 2rem;
+
+    background-color: white;
+}
+
+.skiplink:focus{
+    top: inherit;
+    left: 50%;
+
+}

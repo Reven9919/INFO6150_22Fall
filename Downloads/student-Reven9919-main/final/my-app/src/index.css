@@ -1,0 +1,21 @@
+*,*::before, *::after{
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color:black;
+  --primary-bg:papayawhip;
+  --header-bg:burlywood;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+
+}
+
+#root{
+  height: 100%;
+
+
+}

@@ -1,0 +1,126 @@
+form {
+    display: grid;
+    grid-template-columns: 0.5fr 1em 2fr;
+    grid-template-areas: 
+    "namelabel name name nameerror"
+    "emaillabel email email emailerror"
+    "frequencylabel frequencylabel frequencylabel frequencylabel"
+    "frequency frequency frequency frequencyerror"
+    ". button button .";
+  
+    line-height: 3;
+    margin: 3rem;
+    padding: 3rem;
+  
+    font-size: 1.3rem;
+    align-items: center;
+  }
+  
+  .subscribe-form-light {
+    color: grey;
+    background-color: #eee;
+  }
+  
+  .subscribe-form-dark {
+    color: white;
+    background-color: #303030;
+  }
+  
+  input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  
+    width: 80%;
+  
+    border-radius: 0.5rem;
+  }
+  
+  #name-label {
+    grid-area: namelabel;
+  }
+  
+  #name {
+    grid-area: name;
+  }
+  
+  #email-label {
+    grid-area: emaillabel;
+  }
+  
+  #email {
+    grid-area: email;
+  }
+  
+  .error-message {
+    color: red;
+  
+    font-size: 1rem;
+  }
+  
+  #name-error {
+    grid-area: nameerror;
+  }
+  
+  #email-error {
+    grid-area: emailerror;
+  }
+  
+  #frequency-label {
+    grid-area: frequencylabel;
+  }
+  
+  #frequency {
+    grid-area: frequency;
+  
+    width: 80%;
+  }
+  
+  select#frequency {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 80%;
+  
+    border-radius: 0.5rem;
+  }
+  
+  #frequency-error {
+    grid-area: frequencyerror;
+  }
+  
+  .subscribe-button {
+    grid-area: button;
+    
+    margin: 3rem;
+    height: 3rem;
+    width: 10rem;
+  
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  #subscribe-button-light {
+    color: white;
+    background-color: #1f487e;
+  }
+  
+  #subscribe-button-dark {
+    color: white;
+    background-color: #919191;
+  }
+  
+  .submitted-tip {
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+  
+    color: #2c945d;
+  
+    font-size: 1.3rem;
+  }
+  
+  @media screen and (max-width: 44rem) {
+    .subscribe-form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
