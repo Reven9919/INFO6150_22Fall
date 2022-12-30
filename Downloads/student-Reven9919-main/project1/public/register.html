@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/register.css">
+    <!--Box Icons Font CDN LINK -->>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Register Page</title>
+</head>
+<body>
+    <header>
+        <nav >
+                <div class="navbar">
+                    <div class="logo"><a href="./index.html"><img class="logo" src="./pics/logo.jpeg" width="70px" height="70px" alt="logo for Project1">WildCat</a></div>
+                    <div class="nav-links">
+                        <ul class="links">
+                          
+                            <li>
+                                <a href="./index.html">Home</a>
+                                <i class='bx bxs-chevron-down arrow home-arrow'></i>
+                                <ul class="home-sub-menu sub-menu">
+                                    <li><a href="./index.html">Home Page</a></li>
+                                    <li><a href="./about.html">About US</a></li>
+                                    <li><a href="./register.html">Register</a></li>
+                                </ul>
+                            </li>            
+                            <li>
+                                <a href="./about.html">About US</a>
+                                <i class='bx bxs-chevron-down arrow au-arrow'></i>
+                                <ul class="au-sub-menu sub-menu">
+                                    <li><a href="./index.html">Home Page</a></li>
+                                    <li><a href="./about.html">About US</a></li>
+                                    <li><a href="./register.html">Register</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="./register.html">Register</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <h1>Do you want to join the wildcat Community?</h1>
+        <form method = "POST" class="forms" action="/register">
+            <label for="name">name</label>
+            <input type="text" name = "name" required>
+
+            <label for="email">email</label>
+            <input type="text" name = "email" required>
+
+            <span class="check">
+            <input type="checkbox" id = "info" checked>
+            <label for="info" id ="checkbox">Do you want us to send you the latest wildcat news?</label>
+            </span>
+        
+            <label for="tier">Membership</label>
+            <select id ="tier">
+                <option value="Silver">Silver tier</option>
+                <option value="Gold">Gold tier</option>
+                <option value="Platinum">Platinum tier</option>
+                <option value="" selected>Please select an option</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+
+
+        
+    </main>
+
+    <footer>
+        We really care about your privacy, see our <a href="www.google.com">Privacy Policy</a>
+    </footer>
+    
+</body>
+</html>

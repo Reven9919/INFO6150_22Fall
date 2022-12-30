@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    color: black;
+    background-color: lightgray;
+    text-decoration: underline;
+    padding: 3rem;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: lightskyblue;
+}
+nav .navbar{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 0 50px;
+  
+}
+nav .navbar .logo a{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    
+
+}
+
+nav .navbar .nav-links {
+    height: 100%;
+    line-height: 70px;
+
+}
+nav .navbar .nav-links .links{
+    display: flex;
+}
+nav .navbar .nav-links .links li{
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+}
+nav .navbar .nav-links .links li a{
+    height: 100%;
+    color: aliceblue;
+    text-decoration: none;
+    white-space: nowrap;
+}
+nav .navbar .nav-links .links li .arrow{
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    color: aliceblue;
+    line-height: 70px;
+    transition: all 0.3s ease;
+}
+.navbar .nav-links .links li:hover .home-arrow,
+.navbar .nav-links .links li:hover .au-arrow{
+    transform: rotate(180deg);
+}
+.navbar .nav-links .links .sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: lightskyblue;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    display: none;
+
+}
+.navbar .nav-links .links .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid white;
+}
+.navbar .nav-links .links .sub-menu li a{
+    font-size: 15px;
+    font:500;
+    
+}
+
+h1{
+    position: fixed;
+}
+
+footer{
+    color: black;
+    font-size: 0.9rem;
+    background-color: lightgray;
+    padding: 1rem;
+}
+.navbar .nav-links .links li:hover .home-sub-menu,
+.navbar .nav-links .links li:hover .au-sub-menu{
+    display: block;
+
+}
+header{
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+    
+}
+
+h1{
+    position: fixed;
+   
+}
+
+footer{
+    color: black;
+    font-size: 0.9rem;
+    background-color: lightskyblue;
+    padding: 1rem;
+}
+@media (max-width:1000px) {
+    nav .navbar{
+        min-width: 100%;
+        padding: 0 25px;
+    }
+}
