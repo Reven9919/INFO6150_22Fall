@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="foodimages" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ggo-Ve-vmE">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="250" id="YDq-Hq-CS8">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YDq-Hq-CS8" id="nDz-WH-S2z" customClass="UIImageView">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fast-food-concept-greasy-fried-restaurant-take-out-as-onion-rings-burger-hot-dogs-fried-chicken-french-fries-31114163" highlightedImage="fastfood" translatesAutoresizingMaskIntoConstraints="NO" id="A4m-ra-0Zs">
+                                                    <rect key="frame" x="0.0" y="27" width="390" height="197"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="380" id="5L0-vx-dRN"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="GKe-We-cQk"/>
+                                                        <constraint firstAttribute="height" constant="30" id="wsR-fl-MLl"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqj-L4-Gkw">
+                                                    <rect key="frame" x="171" y="226" width="48" height="24"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="A4m-ra-0Zs" secondAttribute="trailing" constant="5" id="17I-DA-wTz"/>
+                                                <constraint firstItem="A4m-ra-0Zs" firstAttribute="top" secondItem="nDz-WH-S2z" secondAttribute="top" constant="77" id="FII-TU-g9w"/>
+                                                <constraint firstItem="A4m-ra-0Zs" firstAttribute="leading" secondItem="nDz-WH-S2z" secondAttribute="leading" constant="5" id="Ft3-Jq-Jnr"/>
+                                                <constraint firstItem="eqj-L4-Gkw" firstAttribute="top" secondItem="A4m-ra-0Zs" secondAttribute="bottom" constant="5" id="GXZ-dv-UNL"/>
+                                                <constraint firstItem="A4m-ra-0Zs" firstAttribute="top" secondItem="nDz-WH-S2z" secondAttribute="topMargin" constant="5" id="Hnc-S8-aak"/>
+                                                <constraint firstItem="A4m-ra-0Zs" firstAttribute="leading" secondItem="nDz-WH-S2z" secondAttribute="leadingMargin" constant="5" id="Vu0-LV-Mqd"/>
+                                                <constraint firstItem="A4m-ra-0Zs" firstAttribute="leading" secondItem="nDz-WH-S2z" secondAttribute="leadingMargin" constant="5" id="WMF-Ed-1Oi"/>
+                                                <constraint firstItem="eqj-L4-Gkw" firstAttribute="top" secondItem="A4m-ra-0Zs" secondAttribute="bottom" constant="77" id="fr6-0l-O5t"/>
+                                                <constraint firstItem="A4m-ra-0Zs" firstAttribute="top" secondItem="nDz-WH-S2z" secondAttribute="topMargin" constant="5" id="imn-ae-0YK"/>
+                                                <constraint firstAttribute="trailing" secondItem="A4m-ra-0Zs" secondAttribute="trailing" constant="5" id="jse-EY-LKz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="A4m-ra-0Zs" secondAttribute="trailing" constant="5" id="lf4-k7-2cz"/>
+                                                <constraint firstItem="eqj-L4-Gkw" firstAttribute="top" secondItem="A4m-ra-0Zs" secondAttribute="bottom" constant="5" id="u18-kw-5Am"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="k3X-vA-yhK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VLP-e1-xDw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ggo-Ve-vmE" secondAttribute="bottom" id="9ht-tk-QIb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ggo-Ve-vmE" secondAttribute="trailing" id="Vhh-ld-Gn2"/>
+                            <constraint firstItem="ggo-Ve-vmE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eUn-as-eRH"/>
+                            <constraint firstItem="ggo-Ve-vmE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v6l-MJ-eBR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblView" destination="ggo-Ve-vmE" id="1ZY-0U-OLW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fast-food-concept-greasy-fried-restaurant-take-out-as-onion-rings-burger-hot-dogs-fried-chicken-french-fries-31114163" width="200" height="138"/>
+        <image name="fastfood" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
