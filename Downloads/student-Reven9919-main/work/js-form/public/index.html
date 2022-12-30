@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>js-intro hw</title>
+</head>
+<body>
+    <main>
+
+        <header>
+            <div class="logo-place">
+            <h1>js-form</h1>
+            </div>
+        </header>
+
+        <form method = "post" action ="/register" class="forms">
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text" placeholder="required"/>
+            <div class="invalid-name">Name is required</div>
+
+            <label for="email">Email</label>
+            <input name="email" id="email" type="text" placeholder="required"/>
+            <div class="error-message" id="emailerror"></div>
+           
+
+            <label for="confirm-email">Confirm Email</label>
+            <input name="confirm-email" id="confirmemail" type="text" placeholder="required"/>
+            <div class="error-message" id="confirmdemail-error"></div>
+
+            <span class="check">
+            <input type="checkbox" name = "wants-spam" id = "wants-spam" checked>
+            <label for="wants-spam" id ="wants-spam">Do you want us to send you spam email?</label>
+            </span>
+        
+            <label for="tier">Tire</label>
+            <select id ="tier">
+                <option value="Silver">Silver tier</option>
+                <option value="Gold">Gold tier</option>
+                <option value="Platinum">Platinum tier</option>
+                <option value="" selected>Please select an option</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <footer>
+            We really care about your privacy, see our <a href="www.google.com">Privacy Policy</a>
+        </footer>
+    </main>
+    <script src ="js-form.js"></script>
+
+    
+</body>
+</html> 

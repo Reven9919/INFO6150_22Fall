@@ -1,0 +1,157 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+html, body {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+  
+    height: 100%;
+    padding: 0;
+    margin: 1rem;
+  
+    font-family: sans-serif;
+}
+  
+header{
+    color: black;
+    background-color: lightgray;
+    text-decoration: underline;
+    padding: 3rem;
+}
+
+a{
+    color: black;
+    text-decoration: underline;
+    padding: 5rem;
+}
+
+input{
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+input:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+
+
+button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1em;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 5rem;
+    border-color: gray;
+    background-color: lightblue;
+    color: black;
+}
+
+button:hover{
+
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+
+select{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1em;
+}
+
+
+
+li{
+    display: flex;
+    flex-flow: row;
+    padding: 1rem;  
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.forms{
+    background-color: lightblue;
+    color: black;
+    padding: 2rem; 
+    display: flex;
+    flex-flow: column;
+    margin: 0rem;
+}
+
+label{
+    padding: 0.5rem;
+    font-size: 1.2em;
+}
+
+span{
+    padding:0.5rem;
+    padding-bottom: 0;
+}
+
+input:not(#wants-spam) {
+    width: 60%;
+}
+  
+
+.error-message {
+    color: red;
+  
+    font-size: 1rem;
+}
+  
+.invalid-name{
+    grid-area: nameerror;
+  
+    display: none;
+  
+    color: red;
+  
+    font-size: 1rem;
+}
+  
+.invalid-name .errorname {
+    display: initial;
+}
+  
+#email-error {
+    grid-area: emailerror;
+}
+  
+#confirm-email-error {
+    grid-area: confirmemailerror;
+}
+
+#tier {
+    grid-area: tier;
+  
+    width: 60%;
+}
+  
+footer{
+    color: black;
+    font-size: 0.9rem;
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+
+
+@media screen and (max-width:40rem) {
+
+    header{
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .forms{
+        display: grid;
+        grid-template-columns: 2rem 2em 1fr;
+        line-height: 2; 
+        width: 100%;
+    }
+    
+} 
